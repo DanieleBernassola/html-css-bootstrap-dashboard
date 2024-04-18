@@ -107,7 +107,91 @@
         </nav>
 
         <main class="col-12 col-md-9 col-lg-10">
+           <!-- TITOLO PAGINA -->
+           <div class="pricing-header p-3 pb-md-4 mx-auto text-center">
+            <h1 class="display-4 fw-normal text-body-emphasis">Crea nuovo prodotto</h1>
+            <p class="fs-5 text-secondary">I campi contrassegnati con un asterisco (*) sono obbligatori.<br> Le immagini devono essere in formato PNG e non devono superare i 4MB di dimensione</p>
+          </div>
 
+          <!-- FORM -->
+          <form>
+            <div class="row">
+              <!-- PRIMA COLONNA -->
+              <div class="col-12 col-lg-7">
+                <!-- NOME -->
+                <div class="mb-3">
+                  <label for="exampleFormControlInput1" class="form-label">Nome</label>
+                  <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Samsung Galaxy 10 Plus">
+                </div>
+                <!-- PREZZO -->
+                <div class="mb-3">
+                  <label for="exampleFormControlInput1" class="form-label">Prezzo</label>
+                  <input type="number" class="form-control" id="exampleFormControlInput1" placeholder="99.00">
+                </div>
+                <!-- MARCA -->
+                <div class="mb-3">
+                  <label for="">Marca</label>
+                  <select class="form-select" aria-label="Default select example">
+                    <option selected>---Seleziona---</option>
+                    <option value="1">Samsung</option>
+                    <option value="2">Sony</option>
+                    <option value="3">Xiaomi</option>
+                  </select>
+                </div>
+                <!-- MESSAGGIO -->
+                <div class="form-floating mb-3">
+                  <textarea class="form-control" placeholder="Inserisci la descrizione del prodotto, massimo 1000 caratteri" id="floatingTextarea2" style="height: 100px"></textarea>
+                </div>
+                <!-- FILE -->
+                <div class="mb-3">
+                  <input class="form-control" type="file" id="formFile">
+                </div>
+                <!-- BOTTONI -->
+                <div class="btn-group mb-3" role="group" aria-label="First group">
+                  <button type="button" class="btn btn-outline-secondary">Disponibile</button>
+                  <button type="button" class="btn btn-outline-secondary">Esaurito</button>
+                  <button type="button" class="btn btn-outline-secondary">Fuori produzione</button>
+                  <button type="button" class="btn btn-outline-secondary">In arrivo</button>
+                </div>
+              </div>
+              <!-- SECONDA COLONNA -->
+              <div class="col-12 col-lg-5">
+                <ul class="list-group">
+                  <li class="list-group-item">
+                    <input class="form-check-input me-1" type="checkbox" value="" id="firstCheckbox">
+                    <label class="form-check-label" for="firstCheckbox">fotocamera principale</label><br>
+                    <label class="text-body-secondary" for="">foto di alta qualità e registrare video nitidi</label>
+                  </li>
+                  <li class="list-group-item">
+                    <input class="form-check-input me-1" type="checkbox" value="" id="secondCheckbox">
+                    <label class="form-check-label" for="secondCheckbox">schermo OLED</label><br>
+                    <label class="text-body-secondary" for="">offre colori vividi per un'esperienza straordinaria</label>
+                  </li>
+                  <li class="list-group-item">
+                    <input class="form-check-input me-1" type="checkbox" value="" id="thirdCheckbox">
+                    <label class="form-check-label" for="thirdCheckbox">processore Octa-core</label>
+                    <label class="text-body-secondary" for="">prestazioni fluide e veloci per eseguire le applicazioni più esigenti</label>
+                  </li>
+                  <li class="list-group-item">
+                    <input class="form-check-input me-1" type="checkbox" value="" id="fourthCheckbox">
+                    <label class="form-check-label" for="fourthCheckbox">ricarica wireless</label>
+                    <label class="text-body-secondary" for="">consente di ricaricare lo smartphone comodamente senza l'uso di cavi</label>
+                  </li>
+                  <li class="list-group-item">
+                    <input class="form-check-input me-1" type="checkbox" value="" id="fifthCheckbox">
+                    <label class="form-check-label" for="fifthCheckbox">connessione 5G</label>
+                    <label class="text-body-secondary" for="">navigazione ultra veloce e streaming senza interruzioni</label>
+                  </li>
+                  <li class="list-group-item">
+                    <input class="form-check-input me-1" type="checkbox" value="" id="sixthCheckbox">
+                    <label class="form-check-label" for="sixthCheckbox">tecnologia NFC</label>
+                    <label class="text-body-secondary" for="">per effettuare pagamenti senza contatto</label>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <button type="button" class="btn btn-primary">Salva</button>
+          </form>
         </main>
       </div> <!-- FINE ROW -->
 
